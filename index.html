@@ -359,6 +359,38 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/29/ROP1/" >
+            
+                <span>ROP1</span>
+        </a>
+        <div class="abstract-content">
+            123456int __cdecl main(int argc, const char **argv, const char **envp)&#123;  vulnerable_function();  system("echo 'Hello World!'");  return 0;&#125;
+
+主函数是这样的,然后进去查看里面的vlun函数
+1234567ssize_t vulnerable_function()&#123;  char buf; // [esp+0h] [ebp-88h]  system("echo Input:");  return read(0, &amp;b...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/29</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "pwn">pwn</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/11/28/pwnwp1/" >
             
                 <span>pwnwp1</span>
@@ -804,9 +836,18 @@ SQL语句分类:
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 6
+        Total : 7
         </div>
         <!-- search  -->
         
@@ -819,6 +860,11 @@ SQL语句分类:
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/29</span><a class="archive-post-title" href= "/2019/11/29/ROP1/" >ROP1</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -855,9 +901,9 @@ SQL语句分类:
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="Reverse"><span class="iconfont-archer">&#xe606;</span>Reverse</span>
-    
         <span class="sidebar-tag-name" data-tags="pwn"><span class="iconfont-archer">&#xe606;</span>pwn</span>
+    
+        <span class="sidebar-tag-name" data-tags="Reverse"><span class="iconfont-archer">&#xe606;</span>Reverse</span>
     
         <span class="sidebar-tag-name" data-tags="sql"><span class="iconfont-archer">&#xe606;</span>sql</span>
     
